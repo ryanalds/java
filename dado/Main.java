@@ -1,4 +1,4 @@
-package Dado;
+package dado;
 
 import javax.swing.JOptionPane;
 

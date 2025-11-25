@@ -1,4 +1,4 @@
-package Dado;
+package dado;
 
 public class Dado {
     private int lados;
