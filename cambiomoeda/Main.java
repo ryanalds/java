@@ -10,16 +10,17 @@ public class Main {
 
         Moeda dolar = new Moeda( "USD", 5.39 );
         Moeda euro = new Moeda( "EUR", 6.21  );
-        
+        Moeda libra = new Moeda("LBR", 7.00);
+
         System.out.println("Digite a moeda para qual voce quer converter");
-        
+
         Map<String, Moeda> mapaMoedas = new HashMap<>();
-        
+
         mapaMoedas.put("USD", dolar);
         mapaMoedas.put("EUR", euro);
-        
+
         Moeda selecioda = mapaMoedas.get(input.nextLine());
-        
+
         System.out.println("Digite a quantidade");
         Double valor = input.nextDouble();
         Moeda real = new Moeda( "BRL", valor);
@@ -27,7 +28,7 @@ public class Main {
         System.out.println( real.converterMoeda(selecioda) + " " + selecioda.sigla );
 
         input.close();
-
+    // estive aqui
     }
-    
+
 }
