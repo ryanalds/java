@@ -20,16 +20,15 @@ public class Main {
         mapaMoedas.put("EUR", euro);
         mapaMoedas.put("LBR", libra);
 
-        Moeda selecioda = mapaMoedas.get(input.nextLine());
+        Moeda selecionada = mapaMoedas.get(input.nextLine());
 
         System.out.println("Digite a quantidade");
         Double valor = input.nextDouble();
         Moeda real = new Moeda( "BRL", valor);
 
-        System.out.println( real.converterMoeda(selecioda) + " " + selecioda.sigla );
+        System.out.println( real.converterMoeda(selecionada) + " " + selecionada.sigla );
 
         input.close();
-    // estive aqui
     }
 
 }
