@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
 
-    public static void main ( String[] args ) {
+        public static void main ( String[] args ) {
 
         Scanner input = new Scanner(System.in);
 
@@ -18,13 +18,14 @@ public class Main {
         Moeda rublo_russo = new Moeda("RUB", 0.069);
         Moeda dinar_kuwaitiano = new Moeda("KWD", 17.31);
         Moeda peso_argentino = new Moeda("ARS", 0.0037);
+        Moeda yuan_chines = new Moeda("CNY", 0.75);
 
         System.out.println("Digite a moeda para qual voce quer converter");
 
         Map<String, Moeda> mapaMoedas = new HashMap<>();
 
         mapaMoedas.put("USD", dolar);
-        mapaMoedas.put("EUR", euro);
+        mapaMoedas.put("EUR", euro);    
         mapaMoedas.put("LBR", libra);
         mapaMoedas.put("JPY", iene);
         mapaMoedas.put("CHF", franco_suico);
@@ -33,6 +34,7 @@ public class Main {
         mapaMoedas.put("RUB", rublo_russo);
         mapaMoedas.put("KWD", dinar_kuwaitiano);
         mapaMoedas.put("ARS", peso_argentino);
+        mapaMoedas.put("CNY", yuan_chines);
 
 
         Moeda selecionada = mapaMoedas.get(input.nextLine());
